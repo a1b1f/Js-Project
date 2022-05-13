@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <div class="container">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="three.html">Services</a> </li>
+                    <li> <a href="#food" >Food</a></li>
+                    <li><a href="exer.html">Exercises</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="cart.html"> Cart <i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li> </i><a href="fav.html"> Favourite <i class="fa-solid fa-heart"></i></a></li>
+
+                </ul>
+            
+        </div>
+    </nav>
+    <!--MAIN -->
+    <div class="container">
+        <h2 class="head-prod">Tools</h2>
+        <input type="text" id="inpu" class="search" onkeyup="search_Product()" placeholder=" Type Your Search Here..">
+        <i class="fa-solid fa-magnifying-glass seIcon" onclick="search_Product()"></i>
+        <div id="pp" style="width: 100%;">
+            <button id="Dumbel" onclick="Filter1()">Dumbels</button>
+            <button id="Bar" onclick="Filter2()">Bars</button>
+            <button id="Mat" onclick="Filter3()">Gym Mat</button>
+            <button id="Seat" onclick="Filter4()">Seat</button>
+        <div class="row" id="row">
+        </div>
+        </div>
+    </div>
+    <!---FOOTER-->
+    <footer>
+        Copyright &copy; 2022 Team 1
+    </footer>
+<script src="./js/products.js"></script>  
+</body>
+</html>

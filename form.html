@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="./css/form-style.css">
+
+</head>
+
+<body>
+  <!--NAVIGATION BAR-->
+  <nav>
+    <div class="container-nav">
+      <a class="container2" href="#"></a>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="three.html">Services</a> </li>
+        <li> <a href="food.html">Food</a></li>
+        <li><a href="exer.html">Exercises</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <form id="form">
+    <div class="container">
+      <div class="ccc">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr><br>
+        <div class="input-error">
+          <label for="name"><b>User Name</b> </label><br>
+          <input type="text" placeholder="Enter User Name" id="name" onkeyup="nameValidation()">
+          <span id="name-Error"></span>
+        </div>
+        <div class="input-error">
+          <label for="email"><b>Email</b></label><br>
+          <input type="text" placeholder="Enter Email" id="email" onkeyup="emailValidation()">
+          <span id="email-Error"></span>
+        </div>
+         <div class="input-error">
+          <label for="pass"><b>Password</b></label><br>
+          <input type="password" placeholder="Enter Password" id="pass" onkeyup="passValidation()">
+          <span id="password-Error"></span>
+        </div>
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>  
+          <button type="submit" class="signupbtn" onclick="validateForm()"> SignUp</button>
+          <span id="butError"></span>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!---FOOTER-->
+  <footer>
+    Copyright &copy; 2022 Team 1
+  </footer>
+</body>
+<script src="./js/form.js"></script>
+
+</html>
